@@ -75,7 +75,7 @@ scorer = make_scoreer(f1_score)
 grid_obj = GridSearchCV(clf, parameters, scoring=scorer)
 grid_fit = grid_obj.fit(X, y)
 
-best_clf = grid_fit.best_estimator
+best_clf = grid_fit.best_estimator_
 best_clf.predict(X_test)
 ```
 
